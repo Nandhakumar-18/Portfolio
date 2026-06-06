@@ -1,0 +1,166 @@
+html{
+    font-size: 22px;
+}
+
+:root{
+    --bg:#ffffff;
+    --text:#222;
+    --primary:#2563eb;
+    --card:#f3f4f6;
+}
+
+.dark-theme{
+    --bg:#121212;
+    --text:#ffffff;
+    --primary:#4f8cff;
+    --card:#1f1f1f;
+}
+
+*{
+    margin:0;
+    padding:5px;
+    box-sizing:border-box;
+    /*font-family:Poppins,sans-serif;*/
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.4s;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:var(--bg);
+    position:sticky;
+    top:0;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+}
+
+#theme-btn{
+    padding:8px 12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+    padding:60px 8%;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:2.5rem;
+}
+
+.hero-text span{
+    color:var(--primary);
+}
+
+.hero-img img{
+    width:150%;
+    max-width:250px;
+    border-radius:50%;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+section{
+    padding:60px 8%;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:var(--card);
+    padding:25px;
+    border-radius:12px;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact-form button{
+    padding:12px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+/* Tablet */
+
+@media(min-width:768px){
+
+.hero{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* Desktop */
+
+@media(min-width:1024px){
+
+.hero-text h1{
+    font-size:4rem;
+}
+
+}
